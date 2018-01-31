@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.worldcupquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Who is the top goalscorer in the history at World Cup?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textColor="#ECEFF1"/>
+
+    <RadioGroup
+        android:id="@+id/first_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maradona"
+            android:textColor="#ECEFF1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ronaldo"
+            android:textColor="#ECEFF1"/>
+
+        <RadioButton
+            android:id="@+id/first_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Klose"
+            android:textColor="#ECEFF1"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Which country has participated more times in the World Cup?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textColor="#ECEFF1"/>
+
+    <RadioGroup
+        android:id="@+id/second_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/second_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazil"
+            android:textColor="#ECEFF1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Germany"
+            android:textColor="#ECEFF1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spain"
+            android:textColor="#ECEFF1"/>
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Which of the following players has won three World Cup winners' medals?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textColor="#ECEFF1"/>
+
+    <RadioGroup
+        android:id="@+id/third_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maradona"
+            android:textColor="#ECEFF1"/>
+
+        <RadioButton
+            android:id="@+id/third_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pele"
+            android:textColor="#ECEFF1"
+            />
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniesta"
+            android:textColor="#ECEFF1"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Which country has played the most World Cup matches (106)?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:textColor="#ECEFF1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            android:hint="Insert name"
+            android:id="@+id/fourth_question"
+            android:textColor="#ECEFF1"
+            android:bufferType="normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="Which of the following have won excatly 2 world cups?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="8sp"
+        android:textColor="#ECEFF1"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Italy"
+                android:textColor="#ECEFF1"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Argentina"
+                android:textColor="#ECEFF1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="France"
+                android:textColor="#ECEFF1"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uruguay"
+                android:textColor="#ECEFF1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/getScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="See results"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#ECEFF1"/>
+
+
+    </LinearLayout>
+</ScrollView>

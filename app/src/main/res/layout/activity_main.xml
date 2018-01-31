@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.worldcupquiz.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/worldcup" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:text="World Cup Quiz"
+        android:textColor="#ECEFF1"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:paddingTop="200dp"
+        android:layout_below="@id/title"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Test your general knowledge by answering the next 5 questions. Score 100 to get the expert badge."
+        android:textColor="#ECEFF1"
+        android:textSize="20sp"
+        />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/start_quiz"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Start Now"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#ECEFF1"
+        android:textSize="26sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="startnow"/>
+
+</RelativeLayout>

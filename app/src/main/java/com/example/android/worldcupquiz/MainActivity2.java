@@ -45,7 +45,6 @@ public class MainActivity2 extends AppCompatActivity implements OnClickListener 
 
     //display score
     public void onClick(View v) {
-        // TODO Auto-generated method stub
 
         if ((totalScore(getScore)) == 100){
             Toast.makeText(this, "Your are an expert. You scored : " + totalScore(getScore) + "/100", Toast.LENGTH_LONG).show();

@@ -12,9 +12,6 @@ import android.widget.Button;
 /**
  * This app consists in a quiz with 10 questions with initial screen and end screen for score.
  */
-/**
- * This app displays an order form to order coffee.
- */
 public class MainActivity extends AppCompatActivity {
 
 
@@ -23,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button startnow = (Button)findViewById(R.id.start_quiz);
+        Button startNow = (Button)findViewById(R.id.start_quiz);
 
-        startnow.setOnClickListener(new View.OnClickListener() {
+        startNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 Intent start = (new Intent(MainActivity.this, MainActivity2.class));

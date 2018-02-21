@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.worldcupquiz.MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/worldcup" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:text="World Cup Quiz"
-        android:textColor="#ECEFF1"
-        android:textSize="48sp"
-        android:textStyle="bold" />
-
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center_vertical"
-        android:paddingTop="200dp"
-        android:text="Test your general knowledge by answering the next 5 questions."
-        android:textColor="#ECEFF1"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/start_quiz"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/colorAccent"
-        android:text="Start Now"
-        android:textColor="#ECEFF1"
-        android:textSize="26sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/worldcup" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:text="World Cup Quiz"
+            android:textColor="#ECEFF1"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center_vertical"
+            android:paddingTop="200dp"
+            android:text="Test your general knowledge by answering the next 5 questions."
+            android:textColor="#ECEFF1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/start_quiz"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Start Now"
+            android:textColor="#ECEFF1"
+            android:textSize="26sp" />
+    </RelativeLayout>
+</ScrollView>

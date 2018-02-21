@@ -7,8 +7,8 @@
     tools:context="com.example.android.worldcupquiz.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:orientation="vertical">
 
@@ -183,6 +183,7 @@
                 android:orientation="vertical">
 
                 <CheckBox
+                    android:id="@+id/checkbox_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Italy"
@@ -203,6 +204,7 @@
                 android:orientation="vertical">
 
                 <CheckBox
+                    android:id="@+id/checkbox_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="France"

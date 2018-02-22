@@ -31,24 +31,18 @@ public class MainActivity2 extends AppCompatActivity implements OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_2);
-
-
         // Init Widget GUI
         getScore = findViewById(R.id.getScore);
-
         // Attached Click listener to Button
         getScore.setOnClickListener(this);
     }
 
     //display score
     public void onClick(View v) {
-
         if ((totalScore(getScore)) == 100) {
             Toast.makeText(this, "Your are an expert. You scored : " + totalScore(getScore) + "/100", Toast.LENGTH_LONG).show();
-
         } else {
             Toast.makeText(this, "You can do better. You scored : " + totalScore(getScore) + "/100", Toast.LENGTH_LONG).show();
-
         }
     }
 
@@ -68,23 +62,17 @@ public class MainActivity2 extends AppCompatActivity implements OnClickListener 
         if (questionThree.getCheckedRadioButtonId() == R.id.third_answer) {
             score += 15;
         }
-
         EditText questionFour = findViewById(R.id.fourth_question);
         if ("Germany".equalsIgnoreCase(questionFour.getText().toString())) {
             score += 30;
         }
-
-
         CheckBox checkBox1 = findViewById(R.id.checkbox_1);
         CheckBox checkBox2 = findViewById(R.id.checkbox_2);
         CheckBox checkBox3 = findViewById(R.id.checkbox_3);
         CheckBox checkBox4 = findViewById(R.id.checkbox_4);
-
         if (checkBox1.isChecked() && checkBox2.isChecked() && !checkBox3.isChecked() && !checkBox4.isChecked()) {
             score += 25;
         }
-
         return score;
     }
-
 }
